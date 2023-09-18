@@ -42,7 +42,7 @@ export function ThemeProvider({
     theme,
     setTheme: () => {
       const currentTheme = localStorage.getItem(storageKey);
-      console.log({ currentTheme });
+
       if (currentTheme === "light") {
         localStorage.setItem(storageKey, "dark");
         setTheme("dark");
